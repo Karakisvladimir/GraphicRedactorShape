@@ -32,10 +32,7 @@ public class Rhombus extends Shape implements Square {
         return result;
     }
 
-    @Override
-    public void printShapeName() {
-        System.out.println(" Shape is : " + getName());
-    }
+
 
     @Override
     public void printColor() {

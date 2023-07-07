@@ -10,10 +10,7 @@ public abstract class Shape {
     }
 
     public abstract void printColor();
-
-    public abstract void printShapeName();
-
-    public String getName() {
+       public String getName() {
         return name;
     }
 
@@ -31,7 +28,7 @@ public abstract class Shape {
 
     @Override
     public String toString() {
-        return "Shape is " + name + "\n " + "Color is " + color;
+        return "Shape is: " + name + "\n " + "Color is : " + color;
     }
 
 

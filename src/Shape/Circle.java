@@ -4,13 +4,8 @@ public class Circle extends Shape implements Square {
     private double radius;
 
     @Override
-    public void printShapeName() {
-        System.out.println(" Shape is : " + getName());
-    }
-
-    @Override
     public void printColor() {
-        System.out.println("Color is:" + getColor());
+        System.out.println("Color is: " + getColor());
     }
 
     @Override
