@@ -1,26 +1,17 @@
 package Shape;
 
-public class Shape {
-
-   private String name;
-    private String color;
-
+public abstract class Shape {
+    public String name;
+    public String color;
 
     public Shape(String name, String color) {
         this.name = name;
         this.color = color;
     }
 
-    public Shape() {
-    }
+    public abstract void printColor();
 
-    public  void printShapeName(){
-        System.out.println(name);
-    }
-   public void printColor(){
-
-       System.out.println(color);
-   }
+    public abstract void printShapeName();
 
     public String getName() {
         return name;
@@ -40,7 +31,8 @@ public class Shape {
 
     @Override
     public String toString() {
-        return "Shape is " + name +  "\n " +"Color is " + color ;
+        return "Shape is " + name + "\n " + "Color is " + color;
     }
+
 
 }

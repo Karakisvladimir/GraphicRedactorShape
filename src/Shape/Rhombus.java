@@ -1,8 +1,8 @@
 package Shape;
 
-public class Rhombus extends Shape implements Square{
-private double diagonal1;
-private double diagonal2;
+public class Rhombus extends Shape implements Square {
+    private double diagonal1;
+    private double diagonal2;
 
     public Rhombus(String name, String color, double diagonal1, double diagonal2) {
         super(name, color);
@@ -28,7 +28,17 @@ private double diagonal2;
 
     @Override
     public double calculateSquare() {
-        double result =(diagonal1*diagonal2)/2;
+        double result = (diagonal1 * diagonal2) / 2;
         return result;
+    }
+
+    @Override
+    public void printShapeName() {
+        System.out.println(" Shape is : " + getName());
+    }
+
+    @Override
+    public void printColor() {
+        System.out.println("Color is:" + getColor());
     }
 }

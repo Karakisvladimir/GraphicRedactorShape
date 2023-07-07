@@ -1,7 +1,7 @@
 package Shape;
 
-public class Triangle extends Shape implements Square{
-    private double  sideA ;
+public class Triangle extends Shape implements Square {
+    private double sideA;
     private double sideB;
     private double sideC;
 
@@ -31,10 +31,7 @@ public class Triangle extends Shape implements Square{
     }
 
 
-
-
-
-    public Triangle(String name, String color, int sideA, int sideB, int sideC ) {
+    public Triangle(String name, String color, int sideA, int sideB, int sideC) {
         super(name, color);
         this.sideA = sideA;
         this.sideB = sideB;
@@ -43,11 +40,20 @@ public class Triangle extends Shape implements Square{
     }
 
     @Override
-    public  double calculateSquare() {
+    public double calculateSquare() {
         //формула Герона
-        double p = (sideA+ sideB + sideC)/2;
-        double result = Math.sqrt(p*(p - sideA)*(p- sideB)*(p-sideC));
+        double p = (sideA + sideB + sideC) / 2;
+        double result = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
         return result;
     }
 
+    @Override
+    public void printShapeName() {
+        System.out.println(" Shape is : " + getName());
+    }
+
+    @Override
+    public void printColor() {
+        System.out.println("Color is:" + getColor());
+    }
 }

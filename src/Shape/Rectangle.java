@@ -1,6 +1,6 @@
 package Shape;
 
-public class Rectangle extends Shape implements Square{
+public class Rectangle extends Shape implements Square {
     private int sideA;
     private int sideB;
 
@@ -28,7 +28,17 @@ public class Rectangle extends Shape implements Square{
 
     @Override
     public double calculateSquare() {
-        double result = sideA*sideB;
+        double result = sideA * sideB;
         return result;
+    }
+
+    @Override
+    public void printShapeName() {
+        System.out.println(" Shape is : " + getName());
+    }
+
+    @Override
+    public void printColor() {
+        System.out.println("Color is:" + getColor());
     }
 }

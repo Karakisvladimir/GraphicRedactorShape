@@ -1,8 +1,8 @@
 package Shape;
 
-public class Parallelogram extends Shape implements Square{
+public class Parallelogram extends Shape implements Square {
     private int sideA;
-    private  int hightParallelogram;
+    private int hightParallelogram;
 
     public Parallelogram(String name, String color, int sideA, int hightParallelogram) {
         super(name, color);
@@ -28,7 +28,17 @@ public class Parallelogram extends Shape implements Square{
 
     @Override
     public double calculateSquare() {
-        double result = sideA*hightParallelogram;
+        double result = sideA * hightParallelogram;
         return result;
+    }
+
+    @Override
+    public void printShapeName() {
+        System.out.println(" Shape is : " + getName());
+    }
+
+    @Override
+    public void printColor() {
+        System.out.println("Color is:" + getColor());
     }
 }
