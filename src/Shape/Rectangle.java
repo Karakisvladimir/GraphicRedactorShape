@@ -32,8 +32,6 @@ public class Rectangle extends Shape implements Square {
         return result;
     }
 
-
-
     @Override
     public void printColor() {
         System.out.println("Color is:" + getColor());

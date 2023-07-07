@@ -6,6 +6,7 @@ public class ShapeMain {
         //System.out.println("Площа трикутника дорівнює = " + shape.calculateSquare());
         Circle shape2 = new Circle("Circle", "yellow", 41.2);
         Printer.print(shape);
+        FileShapePrinter.printFile(shape2);
 //        shape2.printColor();
 //        shape2.printShapeName();
 //        System.out.println(shape2 + "\n" + " площа круга дорівнює = " + shape2.calculateSquare());
